@@ -1,0 +1,60 @@
+ ñ´{
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Clientes</title>
+
+
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/myScriptClient.js"></script>
+
+<body>
+<div class="header">
+    <header id="main-header">
+        <h1 id="page-name>Clientes</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="category.html">Categorías</a></li>
+                <li><a href="clientesAdmin.html">Tabla Clientes</a></li>
+                <li><a href="Audience.html">Auditorios</a></li>
+            </ul>
+        </nav>
+
+    </header>
+</div>
+
+
+<!-- formulario de auditorio en html y css -->
+
+<!--/ # ADD MENU-->
+<section class="formularioAdd_auditorio">
+    <h4>Categorías</h4>
+    <input type="hidden" id="idCategory" placeholder="Id..">
+    <input class="form_add" type="text"  id="nameCategory" placeholder="Nombre de la categoría..">
+    <textarea class="form_add" rows="5" cols="50" id="descriptionCategory" placeholder="Descripción.."></textarea>
+
+    <br>
+
+    <br>
+    <input onclick= "saveCategory()" type="button" value="Guardar" id="save_btn">
+    <button onclick='updateCategory()'> Actualizar</button>
+</section>
+
+<div id="resultado">
+</div>
+</body>
+</html>
